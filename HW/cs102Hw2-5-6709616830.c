@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdio.h> 
 
 int main()
 {
@@ -30,10 +30,7 @@ int main()
                     printf("%d is a prime number.\n", num);
                     break;
                 }
-                else
-                {
                     i++; // ถ้าไม่ผ่านเงื่อนไขใดเลยด้านบนให้เพิ่มค่าiและหารต่อไป
-                }
             }
         }
         break; // ไม่ให้โปรแกรมถาม "Please enter an integer <between 2 to 9999999>:" ซ้ำ

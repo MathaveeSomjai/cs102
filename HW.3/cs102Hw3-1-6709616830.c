@@ -9,7 +9,6 @@ int main()
 
     scanf("%d", &n);
 
-    printf("Enter %d real numbers: ", n);
     for (int i = 0; i < n; i++)
     {
         scanf("%lf", &num[i]); // ใช้ lf ถ้าเป็น double
@@ -18,7 +17,8 @@ int main()
         if (i == 0)
         {
             min = num[i];
-            minIndex = i;
+            max = num[i];
+            minIndex = maxIndex = i;
         }
         else if (num[i] < min)
         {
@@ -48,7 +48,7 @@ int main()
     printf("\n");
 
     printf("Above average list:");
-    for (int i = 0; i < n; i++)
+    for (int i = n - 1; i >= 0; i--)
     {
         if (num[i] > avg)
         {

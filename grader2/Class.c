@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+//ต้องแก้ ดูในgood noteได้
 int main()
 {	int n, k, t, x, p;
 	int nub = 0;

@@ -23,7 +23,7 @@ void addpp(st pp[], int *count) //ฟังชันสำหรับการ�
     printf("Enter ID: ");
     scanf("%d", &newpp.id);
     printf("Enter Name: ");
-    scanf(" %[^\n]s", newpp.name); //[^\n] รับค่าsโดยข้ามspace bar
+    scanf(" %[^\n]s", newpp.name); //[^\n] รับข้อมูลจนกว่าจะเจอ \n (enter)
     printf("Enter Age: ");
     scanf("%d", &newpp.age);
     printf("Enter Monthly Income: ");

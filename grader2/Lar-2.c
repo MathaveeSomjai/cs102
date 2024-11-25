@@ -10,13 +10,10 @@ int main()
 		scanf("%d",&arr[i]);
 	}
 	
-	//maxnum = arr[0];
-	
 	for(i=1; i<=n; i++)
-	if(arr[i] == arr[i-1])
 	{
+		if(arr[i] == arr[i-1])
 		nub++;
-	}
 	else 
 	{
 		if(nub>=maxnub)
@@ -25,6 +22,7 @@ int main()
 			maxnum = arr[i-1];
 		}
 		nub = 1;	
+	}
 	}
 	
 	printf("%d %d",maxnum ,maxnub);
